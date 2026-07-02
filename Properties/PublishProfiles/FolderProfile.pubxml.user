@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Perfect\Desktop\MyPublishWeb</_PublishTargetUrl>
+    <History>True|2026-05-19T07:48:57.4282821Z||;True|2026-05-19T13:07:20.8104895+05:30||;True|2026-05-19T13:01:24.8277772+05:30||;True|2026-05-19T12:48:39.5915067+05:30||;True|2026-05-19T12:47:29.7478468+05:30||;True|2026-05-15T20:44:33.2341720+05:30||;True|2026-05-15T20:21:54.5035056+05:30||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="condb">
+      <Value>Server=UniqueTrainingCenter.mssql.somee.com%3bInitial Catalog=UniqueTrainingCenter%3bUser ID=sujitn_SQLLogin_1%3bPassword=h9lev64m4x%3bEncrypt=False%3bTrustServerCertificate=True%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

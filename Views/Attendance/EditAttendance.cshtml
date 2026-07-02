@@ -1,0 +1,89 @@
+﻿@model UniqueClassesSite.Models.AttendanceVM
+
+<div class="container mt-4" style="max-width: 750px; font-family: Arial, sans-serif;">
+    <div class="card shadow border-0">
+        <div class="card-header bg-warning text-dark d-flex justify-content-between align-items-center p-3">
+            <h4 class="mb-0">✏️ हजेरी बदला / अपडेट करा (Edit Attendance)</h4>
+            <span class="badge bg-dark text-white fs-6">@Model.AttendanceDate.ToString("dd-MM-yyyy")</span>
+        </div>
+
+        <div class="card-body">
+            <form asp-action="UpdateDailyAttendance" method="post">
+                <input type="hidden" asp-for="AttendanceDate" />
+                <input type="hidden" asp-for="SelectedCourse" />
+
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th style="width: 10%; text-align: center;">रोल नं.</th>
+                                <th style="width: 50%;">विद्यार्थ्याचे नाव</th>
+                                <th style="width: 20%; text-align: center;">बटण</th>
+                                <th style="width: 20%; text-align: center;">स्थिती (Status)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for (int i = 0; i < Model.StudentList.Count; i++)
+                            {
+                                <tr>
+                                    <td align="center">
+                                        @(i + 1)
+                                        <input type="hidden" asp-for="@Model.StudentList[i].StudentId" />
+                                        <input type="hidden" asp-for="@Model.StudentList[i].StudentName" />
+                                    </td>
+                                    <td class="fw-bold text-secondary">@Model.StudentList[i].StudentName</td>
+                                    <td align="center">
+                                        <div class="form-check form-switch d-inline-block">
+                                            <input class="form-check-input attendance-switch"
+                                                   type="checkbox"
+                                                   asp-for="@Model.StudentList[i].IsPresent"
+                                                   id="switch_@i"
+                                                   data-status-id="status_@i"
+                                                   style="width: 50px; height: 24px; cursor: pointer;" />
+                                        </div>
+                                    </td>
+                                    <td align="center">
+                                        @if (Model.StudentList[i].IsPresent)
+                                        {
+                                            <span id="status_@i" class="badge bg-success fs-6 p-2 w-100">Present</span>
+                                        }
+                                        else
+                                        {
+                                            <span id="status_@i" class="badge bg-danger fs-6 p-2 w-100">Absent</span>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-primary w-100 py-2 fw-bold shadow-sm">
+                        🔄 हजेरी अपडेट करा (Update Attendance)
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const switches = document.querySelectorAll('.attendance-switch');
+        switches.forEach(function (element) {
+            element.addEventListener('change', function () {
+                const statusId = this.getAttribute('data-status-id');
+                const statusLabel = document.getElementById(statusId);
+
+                if (this.checked) {
+                    statusLabel.textContent = "Present";
+                    statusLabel.className = "badge bg-success fs-6 p-2 w-100";
+                } else {
+                    statusLabel.textContent = "Absent";
+                    statusLabel.className = "badge bg-danger fs-6 p-2 w-100";
+                }
+            });
+        });
+    });
+</script>

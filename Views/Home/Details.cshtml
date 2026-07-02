@@ -1,0 +1,24 @@
+﻿@model UniqueClassesSite.Models.Course
+@{
+    Layout = "_Layout";
+}
+<div class="col-md-5 text-center border-left">
+    @if (!string.IsNullOrEmpty(Model.PosterPath))
+    {
+        <div class="mb-4">
+            <h6 class="text-muted">कोर्स पोस्टर</h6>
+            <img src="@Model.PosterPath" class="img-fluid rounded border" alt="Poster" style="max-height: 300px; width: 100%; object-fit: contain;" />
+        </div>
+    }
+
+    @if (!string.IsNullOrEmpty(Model.VideoPath))
+    {
+        <div>
+            <h6 class="text-muted">डेमो व्हिडिओ</h6>
+            <video width="100" controls class="rounded border shadow-sm">
+                <source src="@Model.VideoPath" type="video/mp4">
+            </video>
+        </div>
+        <a asp-action="Index" class="btn btn-primary btn-sm rounded-pill px-3">मागे जा</a>
+    }
+</div>

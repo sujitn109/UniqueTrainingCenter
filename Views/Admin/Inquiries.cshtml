@@ -1,0 +1,35 @@
+﻿@model IEnumerable<UniqueClassesSite.Models.Enquiry>
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class="container-fluid">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h5 class="mb-0">प्रवेश चौकशी यादी (Inquiries)</h5>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead class="table-light">
+                    <tr>
+                        <th>तारीख</th>
+                        <th>नाव</th>
+                        <th>संपर्क माहिती</th>
+                        <th>मेसेज</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.SubmittedDate.ToString("dd MMM, hh:mm tt")</td>
+                            <td><strong>@item.Name</strong></td>
+                            <td>@item.EmailOrPhone</td>
+                            <td>@item.Message</td>
+                       </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

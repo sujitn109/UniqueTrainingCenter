@@ -1,0 +1,774 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\attendance\\attendancehistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\attendance\\attendancehistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\attendance\\addstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\attendance\\addstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\attendance\\studentlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\attendance\\studentlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\attendance\\takeattendance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\attendance\\takeattendance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\attendance\\dailyreport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\attendance\\dailyreport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\attendance\\editattendance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\attendance\\editattendance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\models\\attendancevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:models\\attendancevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\models\\studentattendanceselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:models\\studentattendanceselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\admin\\dailyattendance.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\admin\\dailyattendance.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/UniqueTrainingCenter/True/SqlTable/dbo.Students.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\migrations\\20260621145350_addattendancetables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:migrations\\20260621145350_addattendancetables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\models\\dailyattendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:models\\dailyattendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\models\\adminloginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:models\\adminloginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\migrations\\20260512140616_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:migrations\\20260512140616_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\controllers\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:controllers\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\dotnet-tools.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:dotnet-tools.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\admin\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\admin\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\admin\\inquiries.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\admin\\inquiries.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\home\\contactus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\home\\contactus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\admin\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\admin\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\admin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\admin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\models\\enquiry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:models\\enquiry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|c:\\users\\perfect\\desktop\\demo\\website\\uniqueclassessite\\views\\admin\\messages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8F914016-9C0E-C0B8-54DE-CD1185FA0C2D}|UniqueClassesSite.csproj|solutionrelative:views\\admin\\messages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Migrations\\20260512133206_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260512133206_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DailyReport.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Attendance\\DailyReport.cshtml",
+              "RelativeDocumentMoniker": "Views\\Attendance\\DailyReport.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Attendance\\DailyReport.cshtml",
+              "RelativeToolTip": "Views\\Attendance\\DailyReport.cshtml",
+              "ViewState": "AgIAADQAAAAAAAAAAAAUwE8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-23T16:41:58.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AttendanceController.cs",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Controllers\\AttendanceController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AttendanceController.cs",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Controllers\\AttendanceController.cs",
+              "RelativeToolTip": "Controllers\\AttendanceController.cs",
+              "ViewState": "AgIAAOUAAAAAAAAAAAAAAAABAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-21T15:51:28.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TakeAttendance.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Attendance\\TakeAttendance.cshtml",
+              "RelativeDocumentMoniker": "Views\\Attendance\\TakeAttendance.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Attendance\\TakeAttendance.cshtml",
+              "RelativeToolTip": "Views\\Attendance\\TakeAttendance.cshtml",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAUwHwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-21T17:30:18.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentList.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Attendance\\StudentList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Attendance\\StudentList.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Attendance\\StudentList.cshtml",
+              "RelativeToolTip": "Views\\Attendance\\StudentList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-22T16:10:46.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAcwEgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T12:56:14.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddStudent.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Attendance\\AddStudent.cshtml",
+              "RelativeDocumentMoniker": "Views\\Attendance\\AddStudent.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Attendance\\AddStudent.cshtml",
+              "RelativeToolTip": "Views\\Attendance\\AddStudent.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-23T13:33:21.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AttendanceHistory.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Attendance\\AttendanceHistory.cshtml",
+              "RelativeDocumentMoniker": "Views\\Attendance\\AttendanceHistory.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Attendance\\AttendanceHistory.cshtml",
+              "RelativeToolTip": "Views\\Attendance\\AttendanceHistory.cshtml",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAUwFgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-22T16:17:03.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AttendanceVM.cs",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Models\\AttendanceVM.cs",
+              "RelativeDocumentMoniker": "Models\\AttendanceVM.cs",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Models\\AttendanceVM.cs",
+              "RelativeToolTip": "Models\\AttendanceVM.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAASwAwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-21T15:02:46.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Models\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-21T14:53:10.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditAttendance.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Attendance\\EditAttendance.cshtml",
+              "RelativeDocumentMoniker": "Views\\Attendance\\EditAttendance.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Attendance\\EditAttendance.cshtml",
+              "RelativeToolTip": "Views\\Attendance\\EditAttendance.cshtml",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAcwFgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-22T16:40:08.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StudentAttendanceSelection.cs",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Models\\StudentAttendanceSelection.cs",
+              "RelativeDocumentMoniker": "Models\\StudentAttendanceSelection.cs",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Models\\StudentAttendanceSelection.cs",
+              "RelativeToolTip": "Models\\StudentAttendanceSelection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-21T15:03:18.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-15T02:54:07.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-21T15:37:23.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-21T15:33:22.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T16:16:18.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T16:14:19.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T18:28:44.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DailyAttendance.html",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Admin\\DailyAttendance.html",
+              "RelativeDocumentMoniker": "Views\\Admin\\DailyAttendance.html",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Admin\\DailyAttendance.html",
+              "RelativeToolTip": "Views\\Admin\\DailyAttendance.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-06-21T15:05:38.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA8wBoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T12:52:47.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-21T14:51:01.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "dbo.Students.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/UniqueTrainingCenter/True/SqlTable/dbo.Students.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/UniqueTrainingCenter/True/SqlTable/dbo.Students.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-06-21T17:20:27.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T12:16:59.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-15T14:20:57.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20260621145350_AddAttendanceTables.cs",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Migrations\\20260621145350_AddAttendanceTables.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260621145350_AddAttendanceTables.cs",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Migrations\\20260621145350_AddAttendanceTables.cs",
+              "RelativeToolTip": "Migrations\\20260621145350_AddAttendanceTables.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAAFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-21T14:53:50.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-21T15:00:45.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-21T15:59:01.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AdminLoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Models\\AdminLoginModel.cs",
+              "RelativeDocumentMoniker": "Models\\AdminLoginModel.cs",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Models\\AdminLoginModel.cs",
+              "RelativeToolTip": "Models\\AdminLoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:47:10.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DailyAttendance.cs",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Models\\DailyAttendance.cs",
+              "RelativeDocumentMoniker": "Models\\DailyAttendance.cs",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Models\\DailyAttendance.cs",
+              "RelativeToolTip": "Models\\DailyAttendance.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-21T14:52:44.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20260512140616_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Migrations\\20260512140616_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260512140616_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Migrations\\20260512140616_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20260512140616_InitialCreate.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T14:06:16.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Controllers\\Account.cs",
+              "RelativeDocumentMoniker": "Controllers\\Account.cs",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Controllers\\Account.cs",
+              "RelativeToolTip": "Controllers\\Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:48:04.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "dotnet-tools.json",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\dotnet-tools.json",
+              "RelativeDocumentMoniker": "dotnet-tools.json",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\dotnet-tools.json",
+              "RelativeToolTip": "dotnet-tools.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-21T15:18:21.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAswB4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T13:02:06.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Admin\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Admin\\Create.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Create.cshtml",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAADkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T12:55:39.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Admin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Admin\\Admin.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Admin.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Admin\\Admin.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Admin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T12:53:57.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T12:17:43.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Contactus.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Home\\Contactus.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Contactus.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Home\\Contactus.cshtml",
+              "RelativeToolTip": "Views\\Home\\Contactus.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAD0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T17:13:40.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Inquiries.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Admin\\Inquiries.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Inquiries.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Admin\\Inquiries.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Inquiries.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T16:37:00.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Home\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Home\\Details.cshtml",
+              "RelativeToolTip": "Views\\Home\\Details.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABUAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T17:27:24.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Admin\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Admin\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Edit.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAswCsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T16:03:51.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Admin\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Admin\\Details.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Details.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T14:02:19.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABcAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T17:57:46.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Admin\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Admin\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T13:11:30.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "Models\\Course.cs",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Models\\Course.cs",
+              "RelativeToolTip": "Models\\Course.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T12:16:24.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Enquiry.cs",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Models\\Enquiry.cs",
+              "RelativeDocumentMoniker": "Models\\Enquiry.cs",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Models\\Enquiry.cs",
+              "RelativeToolTip": "Models\\Enquiry.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAswA8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T13:18:36.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T16:16:13.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Messages.cshtml",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Admin\\Messages.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Messages.cshtml",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Views\\Admin\\Messages.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Messages.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T13:22:30.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20260512133206_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Migrations\\20260512133206_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260512133206_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Perfect\\Desktop\\demo\\Website\\UniqueClassesSite\\Migrations\\20260512133206_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20260512133206_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T13:32:06.477Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

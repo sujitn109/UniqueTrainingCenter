@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+@{
+    Layout = "_Layout.cshtml";
+}
+
+<html lang="mr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Unique Training Center</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #f4f7f6;
+        }
+
+        #sidebar {
+            min-height: 100vh;
+            background: #2c3e50;
+            color: white;
+            transition: all 0.3s;
+        }
+
+            #sidebar .nav-link {
+                color: rgba(255,255,255,.8);
+                padding: 15px 20px;
+                border-bottom: 1px solid #34495e;
+            }
+
+                #sidebar .nav-link:hover {
+                    background: #34495e;
+                    color: white;
+                }
+
+                #sidebar .nav-link.active {
+                    background: #3498db;
+                    color: white;
+                }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .navbar-admin {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block px-0">
+                <div class="p-4">
+                    <h5>Unique Admin</h5>
+                </div>
+                <div class="nav flex-column">
+                    <a class="nav-link active" asp-controller="Admin" asp-action="Index">
+                        <i class="bi bi-speedometer2 me-2"></i> डॅशबोर्ड
+                    </a>
+                    <a class="nav-link" asp-controller="Admin" asp-action="Create">
+                        <i class="bi bi-plus-circle me-2"></i> नवीन कोर्स जोडा
+                    </a>
+                    <a class="nav-link" asp-controller="Admin" asp-action="Inquiries">
+                        <i class="bi bi-chat-left-text me-2"></i> प्रवेश चौकशी पहा
+                    </a>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-0">
+                <nav class="navbar navbar-expand-lg navbar-admin mb-4 px-4">
+                    <span class="navbar-brand">Unique Training Center Control Panel</span>
+                    <div class="ms-auto">
+                        <span class="text-muted small">स्वागत आहे, ॲडमिन</span>
+                    </div>
+                </nav>
+                <div class="main-content">
+                    @RenderBody()
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

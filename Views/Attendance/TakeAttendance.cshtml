@@ -1,0 +1,125 @@
+﻿@model UniqueClassesSite.Models.AttendanceVM
+
+<div class="container mt-4" style="max-width: 750px; font-family: Arial, sans-serif;">
+    <div class="card shadow border-0">
+        <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center p-3">
+            <h4 class="mb-0">📅 लाइव्ह उपस्थिती पत्रक (Live Attendance)</h4>
+            <div>
+                <input type="date" id="attendanceDatePicker"
+                       value="@Model.AttendanceDate.ToString("yyyy-MM-dd")"
+                       max="@DateTime.Today.ToString("yyyy-MM-dd")"
+                       class="form-control form-control-sm text-center fw-bold text-dark"
+                       style="max-width: 160px; cursor: pointer;" />
+            </div>
+        </div>
+
+        <div class="card-body">
+            <div id="liveAlert" class="alert alert-success text-center fw-bold d-none" style="padding: 8px;">
+                ✅ उपस्थिती सुरक्षित केली!
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th style="width: 10%; text-align: center;">रोल नं.</th>
+                            <th style="width: 50%;">विद्यार्थ्याचे नाव</th>
+                            <th style="width: 20%; text-align: center;">बटण</th>
+                            <th style="width: 20%; text-align: center;">स्थिती (Status)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (int i = 0; i < Model.StudentList.Count; i++)
+                        {
+                            <tr>
+                                <td align="center">@(i + 1)</td>
+                                <td class="fw-bold text-secondary">@Model.StudentList[i].StudentName</td>
+                                <td align="center">
+                                    <div class="form-check form-switch d-inline-block">
+                                        <input class="form-check-input attendance-switch"
+                                               type="checkbox"
+                                               asp-for="@Model.StudentList[i].IsPresent"
+                                               id="switch_@i"
+                                               data-student-id="@Model.StudentList[i].StudentId"
+                                               data-status-id="status_@i"
+                                               style="width: 50px; height: 24px; cursor: pointer;" />
+                                    </div>
+                                </td>
+                                <td align="center">
+                                    @if (Model.StudentList[i].IsPresent)
+                                    {
+                                        <span id="status_@i" class="badge bg-success fs-6 p-2 w-100">Present</span>
+                                    }
+                                    else
+                                    {
+                                        <span id="status_@i" class="badge bg-danger fs-6 p-2 w-100">Absent</span>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-3">
+                <a asp-action="AttendanceHistory" class="btn btn-primary w-100 fw-bold">📋 पूर्ण हजेरी इतिहास पहा (View History)</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const datePicker = document.getElementById('attendanceDatePicker');
+        const liveAlert = document.getElementById('liveAlert');
+        const switches = document.querySelectorAll('.attendance-switch');
+
+        // १. भविष्यातील तारीख ब्लॉक करणे
+        const today = new Date().toISOString().split('T')[0];
+        datePicker.max = today;
+
+        // २. प्रत्येक स्विच बदलल्यावर आपोआप सेव्ह करणे (Auto Save on Click)
+        switches.forEach(function (element) {
+            element.addEventListener('change', function () {
+                const studentId = this.getAttribute('data-student-id');
+                const statusId = this.getAttribute('data-status-id');
+                const statusLabel = document.getElementById(statusId);
+                const isChecked = this.checked;
+                const selectedDate = datePicker.value;
+
+                // फ्रंटएंडचा रंग आणि मजकूर बदलणे
+                if (isChecked) {
+                    statusLabel.textContent = "Present";
+                    statusLabel.className = "badge bg-success fs-6 p-2 w-100";
+                } else {
+                    statusLabel.textContent = "Absent";
+                    statusLabel.className = "badge bg-danger fs-6 p-2 w-100";
+                }
+
+                // 🚀 गुपचूप बॅकएंडला डेटा पाठवणे (AJAX Call)
+                var formData = new FormData();
+                formData.append('studentId', studentId);
+                formData.append('date', selectedDate);
+                formData.append('isPresent', isChecked);
+
+                fetch('/Attendance/SaveSingleStudentAttendance', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        // सेव्ह झाल्यावर वरती छोटा हिरवा अलर्ट दाखवून २ सेकंदात गायब करणे
+                        liveAlert.classList.remove('d-none');
+                        setTimeout(() => { liveAlert.classList.add('d-none'); }, 1500);
+                    } else {
+                        alert("एरर: हजेरी सेव्ह झाली नाही! " + data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            });
+        });
+    });
+</script>

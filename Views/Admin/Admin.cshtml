@@ -1,0 +1,34 @@
+﻿@model IEnumerable<UniqueClassesSite.Models.Course>
+@{
+    Layout = "_AdminLayout";
+}
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center">
+        <h2>Admin Dashboard - कोर्सेस व्यवस्थापन</h2>
+        <a asp-action="Create" class="btn btn-primary">नवीन कोर्स जोडा</a>
+    </div>
+
+    <table class="table table-bordered mt-3 shadow-sm">
+        <thead class="bg-dark text-white">
+            <tr>
+                <th>कोर्सचे नाव</th>
+                <th>वेळ/कालावधी</th>
+                <th>फीस</th>
+                <th>ॲक्शन</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.CourseName</td>
+                    <td>@item.Duration</td>
+                    <td>₹@item.Fees</td>
+                    <td>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm" onclick="return confirm('खात्री आहे का?')">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

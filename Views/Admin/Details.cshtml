@@ -1,0 +1,64 @@
+﻿@model UniqueClassesSite.Models.Course
+@{
+    Layout = "_AdminLayout";
+}
+<div class="container mt-4 mb-5">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0">@Model.CourseName - कोर्सचा तपशील</h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-7">
+                    <table class="table table-borderless">
+                        <tr>
+                            <th style="width: 30%;">कोर्सचे नाव:</th>
+                            <td><h4 class="text-primary">@Model.CourseName</h4></td>
+                        </tr>
+                        <tr>
+                            <th>माहिती:</th>
+                            <td><p class="text-muted">@Model.Description</p></td>
+                        </tr>
+                        <tr>
+                            <th>कालावधी:</th>
+                            <td><strong>@Model.Duration</strong></td>
+                        </tr>
+                        <tr>
+                            <th>फीस:</th>
+                            <td><h5 class="text-success">₹ @Model.Fees /-</h5></td>
+                        </tr>
+                        <tr>
+                            <th>वेळ:</th>
+                            <td>सकाळी ११:३०</td>
+                        </tr>
+                    </table>
+
+                    <div class="mt-4">
+                        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit करा</a>
+                        <a asp-action="Index" class="btn btn-secondary">मागे जा</a>
+                    </div>
+                </div>
+
+                <div class="col-md-5 text-center border-left">
+                    @if (!string.IsNullOrEmpty(Model.PosterPath))
+                    {
+                        <div class="mb-4">
+                            <h6 class="text-muted">कोर्स पोस्टर</h6>
+                            <img src="@Model.PosterPath" class="img-fluid rounded border" alt="Poster" style="max-height: 300px; width: 100%; object-fit: contain;" />
+                        </div>
+                    }
+
+                    @if (!string.IsNullOrEmpty(Model.VideoPath))
+                    {
+                        <div>
+                            <h6 class="text-muted">डेमो व्हिडिओ</h6>
+                            <video width="100" controls class="rounded border shadow-sm">
+                                <source src="@Model.VideoPath" type="video/mp4">
+                            </video>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,100 @@
+﻿@model IEnumerable<UniqueClassesSite.Models.DailyAttendance>
+
+<div class="container mt-4" style="max-width: 900px; font-family: Arial, sans-serif;">
+    <div class="card shadow border-0">
+        <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center p-3">
+            <h4 class="mb-0">📋 सर्व हजेरी अहवाल (All Attendance History)</h4>
+            <a asp-action="TakeAttendance" class="btn btn-success fw-bold shadow-sm">
+                ➕ नवीन हजेरी घ्या
+            </a>
+        </div>
+
+        <div class="card-body">
+            @if (!Model.Any()) 
+            {
+                <div class="alert alert-warning text-center fw-bold">
+                    डेटाबेसमध्ये सध्या कोणताही हजेरीचा रेकॉर्ड उपलब्ध नाही!
+                </div>
+            }
+            else
+            {
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover align-middle">
+                        <thead class="table-secondary">
+                            <tr>
+                                <th style="width: 20%; text-align: center;">तारीख (Date)</th>
+                                <th style="width: 40%;">विद्यार्थ्याचे नाव</th>
+                                <th style="width: 20%;">कोर्स (Course)</th>
+                                <th style="width: 20%; text-align: center;">उपस्थिती (Status)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var record in Model)
+                            {
+                                <tr>
+                                    <td align="center" class="fw-bold text-secondary">
+                                        @record.AttendanceDate.ToString("dd-MM-yyyy")
+                                    </td>
+
+                                    <td class="fw-bold text-dark">
+                                        @(record.Student != null ? record.Student.StudentName : "Unknown Student")
+                                    </td>
+
+                                    <td>
+                                        <small class="text-muted">
+                                            @(record.Student != null ? record.Student.CourseName : "-")
+                                        </small>
+                                    </td>
+
+                                    <td align="center">
+                                        @if (record.IsPresent)
+                                        {
+                                            <span class="badge bg-success fs-6 px-3 py-2 w-75">Present</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-danger fs-6 px-3 py-2 w-75">Absent</span>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                            @foreach (var record in Model)
+                            {
+                                <tr>
+                                    <td align="center" class="fw-bold text-secondary">@record.AttendanceDate.ToString("dd-MM-yyyy")</td>
+                                    <td class="fw-bold text-dark">@(record.Student != null ? record.Student.StudentName : "Unknown")</td>
+                                    <td><small class="text-muted">@(record.Student != null ? record.Student.CourseName : "-")</small></td>
+                                    <td align="center">
+                                        @if (record.IsPresent)
+                                        {
+                                            <span class="badge bg-success fs-6 px-3 py-2 w-75">Present</span>
+                                        }
+                                        else
+                                        {
+
+                                            <span class="badge bg-danger fs-6 px-3 py-2 w-75">Absent</span>
+                                        }
+                                    </td>
+                                    <td align="center">
+                                        <a asp-action="EditAttendance"
+                                           asp-route-date="@record.AttendanceDate.ToString("yyyy-MM-dd")"
+                                           asp-route-course="@(record.Student != null ? record.Student.CourseName : "")"
+                                           class="btn btn-sm btn-outline-warning fw-bold">
+                                            ✏️ Edit
+                                        </a>
+                                    </td>
+                                    </tr>
+                                    <a asp-action="DeleteAttendance" 
+           asp-route-date="@record.AttendanceDate.ToString("yyyy-MM-dd")" 
+           class="btn btn-sm btn-outline-danger fw-bold"
+           onclick="return confirm('तुम्हाला खात्री आहे का की तुम्हाला या तारखेची हजेरी पूर्णपणे डिलीट करायची आहे?');">
+            🗑️ Delete
+        </a>             
+                         }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </div>
+</div>

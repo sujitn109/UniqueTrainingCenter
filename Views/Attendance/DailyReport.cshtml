@@ -1,0 +1,85 @@
+﻿@model IEnumerable<UniqueClassesSite.Models.DailyAttendance>
+
+<div class="container mt-4" style="max-width: 800px; font-family: Arial, sans-serif;">
+
+    <div class="card shadow-sm border-0 mb-4 bg-light">
+        <div class="card-body d-flex justify-content-between align-items-center flex-wrap py-2">
+            <h5 class="mb-0 fw-bold text-secondary">🔍 तारीख निवडा (Filter by Date):</h5>
+            <form asp-action="DailyReport" method="get" class="d-flex gap-2">
+                <input type="date" name="date" value="@ViewBag.SelectedDate"
+                       max="@DateTime.Today.ToString("yyyy-MM-dd")"
+                       class="form-control fw-bold text-center" onchange="this.form.submit()" style="cursor: pointer;" />
+            </form>
+        </div>
+    </div>
+
+    <div class="card shadow border-0">
+        <div class="card-header bg-dark text-white p-3 text-center">
+            <h4 class="mb-1">📊 दैनिक उपस्थिती अहवाल (Daily Report)</h4>
+            <small class="fw-bold text-warning fs-6">तारीख: @DateTime.Parse(ViewBag.SelectedDate).ToString("dd-MM-yyyy")</small>
+        </div>
+
+        <div class="card-body">
+            <div class="row text-center mb-4">
+                <div class="col-6">
+                    <div class="p-3 bg-success text-white rounded shadow-sm">
+                        <h3 class="mb-0 fw-bold">@ViewBag.TotalPresent</h3>
+                        <small class="fw-bold">🟢 एकूण हजर (Present)</small>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 bg-danger text-white rounded shadow-sm">
+                        <h3 class="mb-0 fw-bold">@ViewBag.TotalAbsent</h3>
+                        <small class="fw-bold">🔴 एकूण गैरहजर (Absent)</small>
+                    </div>
+                </div>
+            </div>
+
+            @if (!Model.Any())
+            {
+                <div class="alert alert-warning text-center fw-bold">
+                    ⚠️ या तारखेला एकही हजेरी रेकॉर्ड साठवलेला नाही!
+                </div>
+            }
+            else
+            {
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped align-middle">
+                        <thead class="table-secondary text-center">
+                            <tr>
+                                <th style="width: 15%;">रोल नं.</th>
+                                <th style="width: 55%; text-align: left;">विद्यार्थ्याचे नाव</th>
+                                <th style="width: 30%;">स्थिती (Status)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                int index = 1;
+                            }
+                            @foreach (var record in Model)
+                            {
+                                <tr>
+                                    <td align="center" class="fw-bold text-muted">@index</td>
+                                    <td class="fw-bold text-dark">
+                                        @(record.Student != null ? record.Student.StudentName : "Unknown Student")
+                                    </td>
+                                    <td align="center">
+                                        @if (record.IsPresent)
+                                        {
+                                            <span class="badge bg-success fs-6 px-3 py-2 w-100">🟢 Present</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-danger fs-6 px-3 py-2 w-100">🔴 Absent</span>
+                                        }
+                                    </td>
+                                </tr>
+                                index++;
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,102 @@
+﻿@model IEnumerable<UniqueClassesSite.Models.Course>
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class="container mt-4">
+    <style>
+        html, body {
+            height: auto !important;
+            overflow-y: visible !important;
+        }
+    </style>
+
+    <h2>युनिक ट्रेनिंग कोर्सेसची यादी</h2>
+    <hr />
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <a asp-action="Create" class="btn btn-primary">नवीन कोर्स जोडा</a>
+
+        <div style="width: 300px;">
+            <div class="input-group">
+                <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+                <input type="text" id="courseSearch" class="form-control" placeholder="कोर्सचे नाव शोधा...">
+            </div>
+            @if (TempData["Message"] != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+                    <strong>अभिनंदन!</strong> @TempData["Message"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+        </div>
+    </div>
+
+    <table class="table table-bordered table-striped" id="courseTable">
+        <thead class="table-dark">
+            <tr>
+                <th>पोस्टर</th>
+                <th>कोर्सचे नाव</th>
+                <th>माहिती</th>
+                <th>कालावधी</th>
+                <th>फीस</th>
+                <th>व्हिडिओ</th>
+                <th>ॲक्शन</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-center">
+                        @if (!string.IsNullOrEmpty(item.PosterPath))
+                        {
+                            <a href="@item.PosterPath" target="_blank">
+                                <img src="@item.PosterPath" width="80" height="80"
+                                     style="object-fit: contain; border: 1px solid #ddd; background: #fff;" />
+                            </a>
+                            <br />
+                            <small class="text-muted">मोठे पहा</small>
+                        }
+                    </td>
+
+                    <td class="fw-bold">@item.CourseName</td>
+                    <td>@item.Description</td>
+                    <td>@item.Duration</td>
+                    <td>₹ @item.Fees.ToString("0.00")</td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(item.VideoPath))
+                        {
+                            <span class="badge bg-success">उपलब्ध</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">नाही</span>
+                        }
+                    </td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Edit</a>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm text-white">Details</a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Delete</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#courseSearch").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#courseTable tbody tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+}

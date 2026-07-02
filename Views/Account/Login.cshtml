@@ -1,0 +1,69 @@
+﻿@model AdminLoginModel
+
+@{
+    ViewData["Title"] = "ॲडमिन लॉगिन";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white text-center">
+                    <h4>युनिक ट्रेनिंग सेंटर</h4>
+                    <p class="mb-0">ॲडमिन लॉगिन</p>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Login" asp-controller="Account" method="post">
+                        @Html.AntiForgeryToken()
+
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="form-group mb-3">
+                            <label class="form-label">युझरनेम</label>
+                            <input asp-for="Username" class="form-control" placeholder="युझरनेम टाका" required />
+                            <span asp-validation-for="Username" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label class="form-label">पासवर्ड</label>
+                            <input asp-for="Password" type="password" class="form-control" placeholder="पासवर्ड टाका" required />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">लॉगिन करा</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center text-muted">
+                    <small>मार्गदर्शक: सुजित ननवरे | सुमिता ननवरे</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .card {
+        border-radius: 15px;
+        border: none;
+    }
+
+    .card-header {
+        border-radius: 15px 15px 0 0 !important;
+        background-color: #4B0082 !important; /* तुमच्या जांभळ्या थीमसाठी */
+    }
+
+    .btn-primary {
+        background-color: #4B0082;
+        border: none;
+    }
+
+        .btn-primary:hover {
+            background-color: #310057;
+        }
+</style>

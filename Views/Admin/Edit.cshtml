@@ -1,0 +1,51 @@
+﻿@model UniqueClassesSite.Models.Course
+@{
+    Layout = "_AdminLayout";
+}
+<div class="container mt-4">
+    <h4>कोर्स एडिट करा: @Model.CourseName</h4>
+    <hr />
+    <form asp-action="Edit" enctype="multipart/form-data">
+        <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="PosterPath" /> <input type="hidden" asp-for="VideoPath" />
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    <label>कोर्सचे नाव</label>
+                    <input asp-for="CourseName" class="form-control" />
+                </div>
+                <div class="form-group mb-3">
+                    <label>माहिती</label>
+                    <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>कालावधी</label>
+                        <input asp-for="Duration" class="form-control" />
+                    </div>
+                    <div class="col-md-6">
+                        <label>फीस</label>
+                        <input asp-for="Fees" class="form-control" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    <label>नवीन पोस्टर अपलोड करा (बदलायचे असल्यास)</label>
+                    <input type="file" name="posterFile" class="form-control" />
+                </div>
+                <div class="form-group mb-3">
+                    <label>नवीन व्हिडिओ अपलोड करा</label>
+                    <input type="file" name="videoFile" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <button type="submit" class="btn btn-success">बदल सेव्ह करा</button>
+            <a asp-action="Index" class="btn btn-secondary">मागे जा</a>
+        </div>
+    </form>
+</div>

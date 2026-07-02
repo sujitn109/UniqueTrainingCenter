@@ -1,0 +1,19 @@
+﻿@model UniqueClassesSite.Models.Course
+@{
+    Layout = "_AdminLayout";
+}
+<div class="container mt-5">
+    <h3 class="text-danger">तुम्हाला हा कोर्स नक्की डिलीट करायचा आहे का?</h3>
+    <div class="card mt-3">
+        <div class="card-body">
+            <h5>@Model.CourseName</h5>
+            <p>@Model.Description</p>
+        </div>
+    </div>
+
+    <form asp-action="Delete" class="mt-3">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">हो, डिलीट करा</button>
+        <a asp-action="Index" class="btn btn-secondary">रद्द करा</a>
+    </form>
+</div>

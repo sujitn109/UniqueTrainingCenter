@@ -1,0 +1,30 @@
+﻿@model UniqueClassesSite.Models.Student
+
+<div class="container mt-4" style="max-width: 500px; font-family: Arial, sans-serif;">
+    <div class="card shadow border-0">
+        <div class="card-header bg-primary text-white text-center p-3">
+            <h4 class="mb-0">👤 नवीन विद्यार्थी जोडा (Add New Student)</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="AddStudent" method="post">
+                <div class="mb-3">
+                    <label class="form-label fw-bold">विद्यार्थ्याचे पूर्ण नाव:</label>
+                    <input asp-for="StudentName" class="form-control" placeholder="उदा. अमित नानावरे" required />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold">कोर्स निवडा (Course):</label>
+                    <select asp-for="CourseName" class="form-select" required>
+                        <option value="">-- कोर्स निवडा --</option>
+                        <option value="Advanced Software Development">Advanced Software Development</option>
+                        <option value="Robotics and STEM Education">Robotics and STEM Education</option>
+                        <option value="Python Image Classification">Python Image Classification</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-success w-100 py-2 fw-bold shadow-sm">💾 विद्यार्थी सेव्ह करा</button>
+                <a asp-action="StudentList" class="btn btn-light w-100 mt-2">मागे जा (Back)</a>
+            </form>
+        </div>
+    </div>
+</div>

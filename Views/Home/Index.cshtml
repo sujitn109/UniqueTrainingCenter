@@ -1,0 +1,161 @@
+﻿@{
+    ViewData["Title"] = "Home - Unique Training Center";
+}
+
+<div class="jumbotron jumbotron-fluid bg-primary text-white text-center py-5 shadow-sm" style="background: linear-gradient(45deg, #1e3c72 0%, #2a5298 100%);">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Unique Training Center</h1>
+        <p class="lead">विटा मधील सर्वोत्तम रोबोटिक्स आणि कोडिंग प्रशिक्षण केंद्र</p>
+        <hr class="my-4 border-light w-25 mx-auto">
+        <div class="d-flex justify-content-center gap-3">
+            <a href="#courses" class="btn btn-warning btn-lg px-4 fw-bold shadow">कोर्सेस पहा</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg px-4">प्रवेशासाठी संपर्क</a>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-n4">
+    <div class="row text-center">
+        <div class="col-md-4 mb-3">
+            <div class="card border-0 shadow-sm py-3">
+                <div class="card-body">
+                    <h3 class="text-primary fw-bold">20+</h3>
+                    <p class="text-muted mb-0">प्रशिक्षित विद्यार्थी</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card border-0 shadow-sm py-3">
+                <div class="card-body">
+                    <h3 class="text-success fw-bold">१०+</h3>
+                    <p class="text-muted mb-0">प्रोफेशनल कोर्सेस</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card border-0 shadow-sm py-3">
+                <div class="card-body">
+                    <h3 class="text-warning fw-bold">१००%</h3>
+                    <p class="text-muted mb-0">प्रॅक्टिकल ट्रेनिंग</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="courses" class="container mt-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">आमचे लोकप्रिय कोर्सेस</h2>
+        <p class="text-muted">उज्ज्वल भविष्यासाठी आजच कोडिंग आणि रोबोटिक्स शिका</p>
+        <div class="input-group">
+            <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+            <input type="text" id="courseSearch" class="form-control" placeholder="कोर्सचे नाव शोधा...">
+        </div>
+    </div>
+
+    <div class="row">
+        @foreach (var course in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+                    <div style="position: relative;">
+                        @if (!string.IsNullOrEmpty(course.PosterPath))
+                        {
+                            <img src="@course.PosterPath" class="card-img-top" alt="@course.CourseName" style="height: 220px; object-fit: contain; background: #f8f9fa;">
+                        }
+                        <span class="badge bg-danger" style="position: absolute; top: 10px; right: 10px;">New</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-dark">@course.CourseName</h5>
+                        <p class="card-text text-muted small">
+                            @(course.Description.Length > 100 ? course.Description.Substring(0, 100) + "..." : course.Description)
+                        </p>
+
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <div>
+                                <span class="text-primary fw-bold">₹ @course.Fees</span>
+                                <small class="text-muted d-block">कालावधी: @course.Duration</small>
+                            </div>
+                            <a asp-action="Details" asp-route-id="@course.Id" class="btn btn-primary btn-sm rounded-pill px-3">माहिती पहा</a>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="bg-light py-5 mt-5">
+    <div class="container text-center">
+        <h3 class="mb-4">आम्हाला का निवडावे?</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <i class="bi bi-cpu h1 text-primary"></i>
+                <h6 class="mt-2">लेटेस्ट रोबोटिक्स किट्स</h6>
+            </div>
+            <div class="col-md-3">
+                <i class="bi bi-clock h1 text-primary"></i>
+                <h6 class="mt-2">लवचिक वेळ (सकाळी ११:३० पासून)</h6>
+            </div>
+            <div class="col-md-3">
+                <i class="bi bi-person-check h1 text-primary"></i>
+                <h6 class="mt-2">वैयक्तिक लक्ष</h6>
+            </div>
+            <div class="col-md-3">
+                <i class="bi bi-award h1 text-primary"></i>
+                <h6 class="mt-2">प्रमाणपत्र (Certificate)</h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .hover-shadow:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+
+    .transition {
+        transition: all 0.3s ease;
+    }
+
+    .mt-n4 {
+        margin-top: -40px;
+        z-index: 10;
+        position: relative;
+    }
+</style>
+<div id="contact" class="container mt-5 mb-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">प्रवेशासाठी आजच संपर्क साधा</h2>
+        <p class="text-muted">तुमच्या मुलांचे भविष्य घडवण्यासाठी आम्ही सज्ज आहोत!</p>
+        <form asp-controller="Home" asp-action="SendEnquiry" method="post">
+            <div class="mb-3">
+                <input type="text" name="Name" placeholder="तुमचे नाव" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <input type="text" name="EmailOrPhone" placeholder="मोबाईल नंबर किंवा ईमेल" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <textarea name="Message" placeholder="तुम्हाला कोणती माहिती हवी आहे?" class="form-control" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 shadow-sm">माहिती मिळवण्यासाठी पाठवा</button>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#courseSearch").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+
+                // इथे आपण 'col-md-4' असलेल्या सर्व कोर्सेसना फिल्टर करत आहोत
+                $("#courses .row .col-md-4").filter(function () {
+                    // कार्डमधील मजकूर चेक करा
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+}

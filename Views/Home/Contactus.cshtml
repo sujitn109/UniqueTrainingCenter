@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "संपर्क - Unique Training Center";
+}
+
+<div class="bg-primary text-white py-5 mb-5 shadow-sm">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold">आमच्याशी संपर्क साधा</h1>
+        <p class="lead">विटा मधील सर्वोत्तम रोबोटिक्स आणि कोडिंग सेंटर</p>
+    </div>
+</div>
+
+<div class="container mb-5">
+    <div class="row g-4">
+        <div class="col-md-5">
+            <div class="card border-0 shadow-lg h-100 p-4" style="border-radius: 15px;">
+                <h3 class="text-primary mb-4">संपर्क तपशील</h3>
+                <div class="d-flex mb-4">
+                    <div class="bg-light p-3 rounded-circle me-3">
+                        <i class="bi bi-geo-alt-fill text-primary h4"></i>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold">पत्ता</h6>
+                        <p class="text-muted">बापट हॉस्पिटलच्या वरती, मारुती मंदिराजवळ, विटा..</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-4">
+                    <div class="bg-light p-3 rounded-circle me-3">
+                        <i class="bi bi-telephone-fill text-primary h4"></i>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold">फोन नंबर</h6>
+                        <p class="text-muted">९६२३८३५४२७ / ९१६८४५६१४२</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-7">
+            <div class="card border-0 shadow-lg p-4" style="border-radius: 15px;">
+                <h3 class="text-primary mb-4">चौकशी करा</h3>
+                <form asp-controller="Home" asp-action="SendEnquiry" method="post">
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <label class="form-label fw-bold">पूर्ण नाव</label>
+                            <input type="text" id="Name" name="Name" class="form-control form-control-lg bg-light border-0" placeholder="उदा. Sujit Nanaware" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">मोबाईल नंबर / ईमेल</label>
+                        <input type="text" name="EmailOrPhone" class="form-control form-control-lg bg-light border-0" placeholder="९८XXXXXXXX" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label fw-bold">तुमचा मेसेज</label>
+                        <textarea id="Message" name="Message" class="form-control form-control-lg bg-light border-0" rows="4" placeholder="तुमचा प्रश्न मराठीत लिहा..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg w-100 py-3 shadow">मेसेज पाठवा</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    
